@@ -3,6 +3,7 @@ import GalleryItem from './GalleryItem'
 
 
 
+
 export class Gallery extends Component {
     state = {
         Items : [

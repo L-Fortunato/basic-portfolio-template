@@ -1,16 +1,22 @@
 import './App.css';
 import Footer from './components/Footer';
-import { Gallery } from './components/Gallery';
 import Header from './components/Header';
-import Splash from './components/Splash';
+import { BrowserRouter as HashRouter } from 'react-router-dom'
+import { AnimatedSwitch, AnimatedRoute } from 'react-router-transition';
+import { Home } from './components/Home';
+import { About } from './components/About';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Splash/>
-      <Gallery/>
-      <Footer/>
+      <HashRouter>
+        <Header />
+        <AnimatedSwitch atEnter={{ opacity: 0 }} atLeave={{ opacity: 0 }} atActive={{ opacity: 1 }} className="switch-wrapper">
+          <AnimatedRoute exact path='/basic-portfolio-template' component={Home} />
+          <AnimatedRoute exact path='/about' component={About} />
+        </AnimatedSwitch>
+        <Footer />
+      </HashRouter>
     </div>
   );
 }

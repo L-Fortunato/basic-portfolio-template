@@ -10,7 +10,7 @@
   background: rgb(248, 248, 248);
 }
 
-* h1{
+* h1 {
   font-family: 'Josefin Slab', serif;
   font-size: 2em;
   font-weight: 1500;
@@ -20,7 +20,11 @@ a {
   text-decoration: none;
 }
 
-.main{
+.text-deco-none {
+  text-decoration: none;
+}
+
+.main {
   margin: 0;
   transition: 0.5s;
 }
@@ -36,12 +40,11 @@ a {
   z-index: 1;
 }
 
-
 .title {
   padding-left: 20px;
 }
 
-.title h1{
+.title-h1 {
   padding: 10px 0px 10px 0px;
 }
 
@@ -79,15 +82,15 @@ a {
   text-align: center;
 }
 
-.desc h1{
+.desc h1 {
   font-size: 2em;
 }
 
-.desc p{
+.desc p {
   font-size: 1.2em;
 }
 
-.gallery{
+.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -95,15 +98,15 @@ a {
   background-color: rgb(248, 248, 248);
 }
 
-.card{
+.card {
   display: block;
   position: relative;
   overflow: hidden;
   height: 320px;
   width: 600px;
   border: transparent;
-  border-radius:2px ;
-  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   background: rgb(248, 248, 248);
   margin: 5px;
   transition: 0.5s;
@@ -111,19 +114,18 @@ a {
   z-index: 0;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.05);
 }
 
-
-.card img{
+.card img {
   margin: auto;
   position: relative;
   width: 100%;
   transition: 0.5s;
 }
 
-.contact{
+.contact {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -132,50 +134,50 @@ a {
   height: 30vh;
 }
 
-.iconGroup{
+.iconGroup {
   display: flex;
   justify-self: center;
   align-items: center;
 }
 
-.icon{
+.icon {
   padding: 10px;
 }
 
-.icon img{
+.icon img {
   width: 20px;
 }
 
-.footer{  
+.footer {
   text-align: center;
   padding-bottom: 10px;
 }
 
-.footer p{
+.footer p {
   line-height: 1em;
   font-size: 0.6em;
   color: rgb(170, 170, 170);
 }
 
-.footer a p{
+.footer a p {
   line-height: 1em;
   font-size: 0.6em;
   color: rgb(170, 170, 170);
 }
 
-.modal-img{
+.modal-img {
   max-width: 800px;
 }
 
-.button{
+.button {
   color: rgb(170, 170, 170);
   cursor: pointer;
   font-size: 1.3em;
 }
 
-.close-btn{
+.close-btn {
   margin-left: auto;
-  margin-right:5px ;
+  margin-right: 5px;
   margin-bottom: 5px;
   padding: 10px;
 }
@@ -193,47 +195,61 @@ a {
   opacity: 0;
 }
 
+.about {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 25px;
+}
 
+.switch-wrapper {
+  position: relative;
+}
+ 
+.switch-wrapper > div {
+  position: relative;
+}
 
 @media only screen and (max-width: 600px) {
   * {
-      font-size: 12px;
+    font-size: 12px;
   }
-  .card{
-      width: 100%;
-      height: 150px;
-      margin: 3px;
-      border-radius:1px;
+  .card {
+    width: 100%;
+    height: 150px;
+    margin: 3px;
+    border-radius: 1px;
   }
-  .modal-img{
+  .modal-img {
     max-width: 320px;
   }
-
-  .card img{
-      position: relative;
-      bottom:50px ;
+  .card img {
+    position: relative;
+    bottom: 50px;
   }
-
-
 }
 
 @media only screen and (max-width: 1026px) {
   * {
-      font-size: 12px;
+    font-size: 12px;
   }
-  .header{
-      justify-content: center;
+  .header {
+    justify-content: center;
   }
-  .splash{
-      padding-top: 100px;
+  .splash {
+    padding-top: 100px;
   }
   .title {
-      padding-left: 0px;
-      padding-top: 10px;
+    padding-left: 0px;
+    padding-top: 10px;
   }
   .navigation ul li {
-      padding: 15px;
-      transition: 0.5s;
-      cursor: pointer;
+    padding: 15px;
+    transition: 0.5s;
+    cursor: pointer;
   }
 }
