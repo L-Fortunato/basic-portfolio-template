@@ -11,7 +11,7 @@ const GalleryItem = ({ work: { imgFile, title, description, id } }) => {
             bottom: 0,
             backgroundColor: 'rgba(380, 380, 380, 0.75)',
             zIndex: '2'
-          },
+        },
         content: {
             position: 'absolute',
             top: '50%',
@@ -35,10 +35,13 @@ const GalleryItem = ({ work: { imgFile, title, description, id } }) => {
             <div className="card" onClick={() => setmodalIsOpen(true)}>
                 <img src={imgFile} alt="" />
             </div>
-            <Modal closeTimeoutMS={600} appElement={document.getElementById('root')} classname = 'ReactModal__overlay' onRequestClose={() => setmodalIsOpen(false)} style={customStyles} isOpen={modalIsOpen}>
+            <Modal closeTimeoutMS={600} appElement={document.getElementById('root')} classname='ReactModal__overlay' onRequestClose={() => setmodalIsOpen(false)} style={customStyles} isOpen={modalIsOpen}>
                 <img className='modal-img' src={imgFile} alt="" />
                 <h1>{title}</h1>
-                <p>{description}</p>
+                <div className='modal-description'>
+                    <p>{description}</p>
+                </div>
+                <img onClick={() => setmodalIsOpen(false)} src='https://www.flaticon.com/svg/static/icons/svg/1828/1828774.svg' style={{ width: '12px', marginTop: '10px', marginLeft: '98%', cursor: 'pointer' }} alt='' />
             </Modal>
         </div>
     )

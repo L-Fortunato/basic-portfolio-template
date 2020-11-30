@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
-export default function Header() {
+const Header = () => {
 
     return (
         <div className='header'>
@@ -14,7 +14,7 @@ export default function Header() {
                 <ul>
                     <Link to="basic-portfolio-template#top">
                         <li>Works</li>
-                    </Link>           
+                    </Link>
                     <Link to='/about#top'>
                         <li>About</li>
                     </Link>
@@ -27,3 +27,4 @@ export default function Header() {
     )
 }
 
+export default Header

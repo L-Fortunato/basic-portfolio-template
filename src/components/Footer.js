@@ -1,18 +1,18 @@
 import React from 'react'
 
-function Footer() {
+const Footer = () => {
     return (
         <div>
-            <div class="contact" id="connect">
+            <div className="contact" id="connect">
                 <h1>Get in Touch</h1>
-                <p>In case you are interested, follow or contact me on the following social media</p>
-                <div class="iconGroup">
-                    <div class="icon"><a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img src="https://www.flaticon.com/premium-icon/icons/svg/3128/3128208.svg" alt="facebook" /></a></div>
-                    <div class="icon"><a href="mail" rel="noreferrer" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/561/561127.svg" alt="email" /></a></div>
-                    <div class="icon"><a href="https://github.com/" rel="noreferrer" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/1051/1051377.svg" alt="github"/></a></div>
+                <p>In case you are interested, contact me trough e-mail or social media.</p>
+                <div className="iconGroup">
+                    <div className="icon"><a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/49/49354.svg" alt="facebook" /></a></div>
+                    <div className="icon"><a href="mail" rel="noreferrer" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/1782/1782765.svg" alt="email" /></a></div>
+                    <div className="icon"><a href="https://pixiv.net/" rel="noreferrer" target="_blank"><img src="https://cdn.onlinewebfonts.com/svg/img_227527.png" alt="pixiv"/></a></div>
                 </div>
             </div>
-            <div class="footer" id="footer">
+            <div className="footer" id="footer">
                 <p>2020</p>
                 <a href="https://github.com/L-Fortunato" rel="noreferrer" target="_blank">
                     <p>Developed by L-Fortunato</p>

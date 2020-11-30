@@ -12,8 +12,8 @@ function App() {
       <HashRouter>
         <Header />
         <AnimatedSwitch atEnter={{ opacity: 0 }} atLeave={{ opacity: 0 }} atActive={{ opacity: 1 }} className="switch-wrapper">
-          <AnimatedRoute exact path='/basic-portfolio-template' component={Home} />
-          <AnimatedRoute exact path='/about' component={About} />
+          <AnimatedRoute exact path='/basic-portfolio-template' component={Home} atEnter={{ opacity: 0 }} atLeave={{ opacity: 1 }} atActive={{ opacity: 1 }} />
+          <AnimatedRoute exact path='/about' component={About} atEnter={{ opacity: 0 }} atLeave={{ opacity: 1}} atActive={{ opacity: 1 }} />
         </AnimatedSwitch>
         <Footer />
       </HashRouter>
